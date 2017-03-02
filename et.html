@@ -1,0 +1,24 @@
+<center><h2>Employee Task</h2>
+
+<table align="center" border="1" ng-init='vm.etdb(vm.user)'>
+    <tr>
+        <td>Id</td>
+        <td>Emp_id</td>
+        <td>Name</td>
+        <td>Designation</td>
+        <td>From date</td>
+        <td>Due date</td>
+        <td>Assigned by</td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="d in vm.Detailss">
+        <td>{{d.id}}</td>
+        <td> <input type="text" ng-model="d.emp_id"> </td>
+        <td> <input type="text" ng-model="d.Name"> </td>                   
+        <td> <input type="text" ng-model="d.Designation"> </td>
+        <td> <input type="text" ng-model="d.from_date"> </td>
+        <td> <input type="text" ng-model="d.due_date"> </td>
+        <td> <input type="text" ng-model="d.assigned_by"> </td>
+        <td> <button ng-click="vm.etdelete(d.id)"> Delete </button> </td>
+    </tr>
+    </center>

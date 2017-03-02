@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Home</title>
+    <base ul-sref="/">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/myapp.module.js">
+    </script>
+    <script type="text/javascript" src="js/emp.controller.js">
+    </script>
+    <script type="text/javascript" src="js/details.controller.js">
+    </script>
+    <script type="text/javascript" src="js/elg.controller.js">
+    </script>
+    <script type="text/javascript" src="js/login.controller.js">
+    </script>
+    <script type="text/javascript" src="js/et.controller.js"></script> 
+    <script type="text/javascript" src="js/taskin.controller.js"></script>
+    <script type="text/javascript" src="js/la.controller.js"></script>
+</head> 
+<style>
+h1 {
+    text-align: center;
+}
+
+lt {
+    text-align: left;
+}
+
+rt {
+    text-align: right;
+}
+</style>
+<body>
+
+    <h1>Employee Management</h1>
+    <lt>
+    <h2>Employee</h2>
+    <a ui-sref="empin">
+    <button> Add </button>
+    </a>
+    <a ui-sref="emp">
+       <button > View </button>
+    </a>
+    </lt>
+    <rt>
+    <h2>Leave Application</h2>
+    <a ui-sref="lain">
+    <button style="float: right;"> Add </button>
+    </a>
+    <a ui-sref="la">
+    <button style="float: right;">View </button>
+    </a>
+    </rt>
+    <lt>
+    <h2>Emp-LOG</h2> 
+    <a ui-sref="lgin">
+    <button> Add </button>
+    </a>
+     <a ui-sref="lg">
+    <button>View </button>
+    </a>
+    </lt>
+    <rt>
+    <h2>Emp Task</h2>
+    <a ui-sref="etin">
+    <button style="float: right;"> Add </button>
+    </a>
+    <a ui-sref="et">
+    <button style="float: right;">View </button>
+    </a>
+    </rt>
+    <div ui-view></div>
+</body>
+</html>
+
+<!-- <button ng-click="mc.insertemp(mc.user)"> Add </button>
+<button ng-click="mc.empdb(mc.user)"> View </button>
+ -->

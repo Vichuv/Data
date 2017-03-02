@@ -1,0 +1,23 @@
+ <center><h2>Employee</h2>
+
+ <table align="center" border="1" ng-init='vm.empdb(vm.user)'>
+    
+<tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Designation</td>
+        <td>Date of Birth</td>
+        <td>Date of Joining</td>
+        <td></td>
+</tr>
+    <tr ng-repeat="d in vm.Details">
+        <td>{{d.id}}</td>
+        <td> <input type="text" ng-model="d.Name"> </td>
+        <td> <input type="text" ng-model="d.Designation"> </td>
+        <td> <input type="text" ng-model="d.Dob"> </td>
+        <td> <input type="text" ng-model="d.Doj"> </td>
+        <td> <button ng-click="vm.empdelete(d.id)"> Delete </button> </td>
+</tr>
+ 
+ </table>
+ </center>
